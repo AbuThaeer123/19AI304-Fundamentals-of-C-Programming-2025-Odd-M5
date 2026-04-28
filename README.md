@@ -39,7 +39,20 @@
 ### Step 12: 
   Stop
 # Program:
+```
+printf("Before swapv: a = %d, b = %d\n", a, b);
+swapv(a, b);
+printf("After swapv: a = %d, b = %d\n", a, b);
+
+printf("Before swapr: a = %d, b = %d\n", a, b);
+swapr(&a, &b);
+printf("After swapr: a = %d, b = %d\n", a, b);
+
+return 0;
+```
 # Output:
+<img width="1265" height="639" alt="image" src="https://github.com/user-attachments/assets/694d67a3-75c3-4615-8f87-b6ea17d9ca60" />
+
 # Result: 
   Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -77,7 +90,21 @@
 ### Step 10:
   Stop
 # Program:
+```
+printf("Enter the number of terms: ");
+scanf("%d", &n);
+
+printf("Fibonacci series of %d terms:\n", n);
+
+for (i = 0; i < n; i++) {
+    printf("%d ", fibo(i));
+}
+
+return 0;
+```
 # Output:
+<img width="1263" height="622" alt="image" src="https://github.com/user-attachments/assets/c9ca13ca-d32c-41b4-82ef-cb3f19f9bac4" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -119,7 +146,21 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 12:
   Stop
 # Program:
+```
+printf("Enter the lower limit: ");
+scanf("%d", &lowerLimit);
+
+printf("Enter the upper limit: ");
+scanf("%d", &upperLimit);
+
+printf("Numbers in the given range:\n");
+printEvenOdd(lowerLimit, upperLimit);
+
+return 0;
+```
 # Output:
+<img width="1271" height="615" alt="image" src="https://github.com/user-attachments/assets/aaa47198-4b53-4eef-9333-3b8b35fe06a1" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -161,7 +202,32 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 11:
   Stop
 # Program:
+```
+printf("Enter the number of elements: ");
+scanf("%d", &n);
+
+ptr = (int *)calloc(n, sizeof(int));
+
+if (ptr == NULL)
+    return 0;
+
+for (i = 0; i < n; i++) {
+    scanf("%d", ptr + i);
+}
+
+for (i = 0; i < n; i++) {
+    sum = sum + *(ptr + i);
+}
+
+printf("Sum = %d", sum);
+
+free(ptr);
+
+return 0;
+```
 # Output:
+<img width="1263" height="550" alt="image" src="https://github.com/user-attachments/assets/cb1b7845-6a38-4d62-b661-a22f9a1af82f" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -197,6 +263,18 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 10:
   Stop
 # Program:
+```
+printf("Enter 5 integers:\n");
+for (i = 0; i < 5; i++) {
+    scanf("%d", &arr[i]);
+}
+
+displayArray(arr, 5);
+
+return 0;
+```
 # Output:
+<img width="1269" height="634" alt="image" src="https://github.com/user-attachments/assets/a99d27a6-5fcc-4f40-b88c-96ae8c0196b4" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
